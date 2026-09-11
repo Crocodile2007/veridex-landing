@@ -800,25 +800,31 @@ export default function App() {
       <footer className="border-t border-white/10 py-12">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
           <p className="text-sm text-zinc-500">© 2026 Veridex Studio. All rights reserved.</p>
+
           <nav className="flex flex-wrap items-center justify-center gap-6">
             {navLinks.map((l) => (
-              <a key={l.href} href={l.href} className="text-sm text-zinc-400 hover:text-white">
+              <a key={l.href} href={l.href} className="text-sm text-zinc-400 hover:text-white transition-colors">
                 {l.label}
               </a>
             ))}
           </nav>
-          <a
-            href="mailto:office@veridexstudio.com"
-            className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white"
-          >
 
-          <p className="text-xs text-gray-500 mt-2">
-            <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-400">
+          <div className="flex flex-wrap items-center gap-6">
+            <a
+              href="/privacy.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-zinc-400 hover:text-white transition-colors"
+            >
               Privacy Policy
-            </a>.
-          </p>
-            <Mail size={14} /> office@veridexstudio.com
-          </a>
+            </a>
+            <a
+              href="mailto:office@veridexstudio.com"
+              className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
+            >
+              <Mail size={14} /> office@veridexstudio.com
+            </a>
+          </div>
         </div>
       </footer>
     </div>
