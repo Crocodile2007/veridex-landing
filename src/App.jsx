@@ -811,6 +811,10 @@ export default function App() {
             href="mailto:office@veridexstudio.com"
             className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white"
           >
+
+          <a href="/privacy.html" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm">
+            Политика конфиденциальности
+          </a>
             <Mail size={14} /> office@veridexstudio.com
           </a>
         </div>
